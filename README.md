@@ -2,7 +2,7 @@
 
 A modular, production-ready research pipeline built with multi agents, LangGraph, Playwright, and Groq (llama-3.1-8b-instant) to automate source scraping, factual claim extraction, and cross-source synthesis into a single executive markdown brief.
 
-## 🛠️ Core Capabilities
+##  Core Capabilities
 * State Machine Coordination: Built using LangGraph to isolate task execution into distinct, single-responsibility steps: Research Extraction -> Strategic Analysis -> Executive Writing.
 * Resilient Web Scraping: Leverages headless Playwright sessions configured with custom headers to safely extract data from JavaScript-heavy corporate and academic research portals.
 * Friction & Gap Detection: Programmed to cross-examine text blocks specifically for consensus patterns, direct factual contradictions, and overlooked industry gaps.
@@ -10,7 +10,7 @@ A modular, production-ready research pipeline built with multi agents, LangGraph
 
 ---
 
-## 📂 Repository Layout
+##  Repository Layout
 * main.py - The single-file multi-agent workflow architecture, browser scraper, and orchestration entry point.
 * final_research_brief.md - The generated, client-ready analytical markdown briefing document.
 * NOTES.md - Engineering notes outlining architectural choices, trade-offs, and scaling plans.
@@ -20,7 +20,7 @@ A modular, production-ready research pipeline built with multi agents, LangGraph
 
 ---
 
-## 🚀 Setup and Installation
+##  Setup and Installation
 
 ### 1. Initialize and Activate Virtual Environment
 Navigate to your project directory and set up a virtual environment to isolate your dependencies:
@@ -47,7 +47,7 @@ python main.py
 
 ---
 
-## 📊 Operational Pipeline Flow
+##  Operational Pipeline Flow
 1. Researcher Agent: Opens browser sandboxes asynchronously, strips page clutter (navbars, scripts), applies text bounds, and builds structured claim sets.
 2. Analyzer Agent: Consolidates the claim library to locate data intersections, unique claims, and unaddressed topics.
 3. Writer Agent: Packages the consolidated insights into a cleanly formatted, highly skimmable executive document.
