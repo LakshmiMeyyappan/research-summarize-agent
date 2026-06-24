@@ -4,7 +4,7 @@ This file documents the core prompts, structural updates, and prompt engineering
 
 ---
 
-## 📍 Step 1: Playwright Scraper Tool Optimization
+##  Step 1: Playwright Scraper Tool Optimization
 **Goal**: Build a resilient web scraper capable of extracting clean text from complex or JavaScript-heavy domains (like HBS or JPMorgan) without getting blocked.
 
 ### The System Prompt:
@@ -14,7 +14,7 @@ The function must use BeautifulSoup to strip away non-content tags like <script>
 
 ---
 
-## 📍 Step 2: Mitigating Rate Limits (Context Pruning)
+##  Step 2: Mitigating Rate Limits (Context Pruning)
 **Goal**: Prevent Error code: 413 - Request too large on free-tier inference keys when synthesizing multiple dense text sources simultaneously.
 
 ### The System Prompt:
@@ -22,7 +22,7 @@ Modify the LangGraph state orchestration step. Before the structured data is pas
 
 ---
 
-## 📍 Step 3: Eliminating Hallucinations in the Output Layer
+##  Step 3: Eliminating Hallucinations in the Output Layer
 **Goal**: Prevent the writing agent from introducing external training data or hallucinating external references (such as unprovided consulting group names or fake statistical figures).
 
 ### The System Prompt (Writer Node Guide):
